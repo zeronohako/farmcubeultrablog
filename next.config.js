@@ -20,7 +20,15 @@ const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
   {
     key: 'Content-Security-Policy',
-    value: ContentSecurityPolicy.replace(/\n/g, ''),
+    value: `
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com giscus.app analytics.umami.is;
+      frame-src https://www.youtube.com;
+      connect-src 'self';
+      img-src 'self' data:;
+      style-src 'self' 'unsafe-inline';
+      object-src 'none';
+    `.replace(/\s{2,}/g, ' ').trim(),
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
   {
