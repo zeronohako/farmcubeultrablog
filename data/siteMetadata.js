@@ -1,16 +1,16 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Farm Cube Ultra Blog',
+  title: 'Lettuce Lab Notes',
   author: 'Brian Ji',
-  headerTitle: 'Farm Cube Ultra Blog',
-  description: 'Logs of growing lettuces with the Farm Cube Ultra',
+  headerTitle: 'Lettuce Lab Notes',
+  description: 'Smart Farming, Crunchy Results.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/zeronohako/farmcubeultrablog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  
+
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
